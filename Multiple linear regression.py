@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-import pylab as pl
+#import pylab as pl
 import numpy as np
 from sklearn import linear_model
 
@@ -25,7 +25,7 @@ print(regr.coef_)
 #print(" The mean error is: %.2f" % np.mean( np.absolute(testy-pred) )) 
 
 
-
+    
 ax1=plt.subplot(3,3,4)
 plt.scatter(train.FUELCONSUMPTION_COMB,train.CO2EMISSIONS,color = 'red')
 plt.plot(trainx, regr.coef_*trainx + regr.intercept_[0],color = 'black')
